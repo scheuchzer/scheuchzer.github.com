@@ -4,7 +4,7 @@ title: "Hello World"
 description: ""
 category: test
 tags: []
-published: false
+published: true
 ---
 
 {% include JB/setup %}
