@@ -2,8 +2,8 @@
 layout: post
 title: "Hello World"
 description: ""
-category: test 2013 Feb "My Test"
-tags: []
+category: test
+tags: ["2013", "Feb", "My Test"]
 published: true
 ---
 
