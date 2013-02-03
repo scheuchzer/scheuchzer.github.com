@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 description: ""
-category: test
+category: test 2013 Feb "My Test"
 tags: []
 published: true
 ---
