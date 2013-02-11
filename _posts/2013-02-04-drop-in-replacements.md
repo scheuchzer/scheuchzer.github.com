@@ -2,8 +2,8 @@
 layout: post
 title: "Dangerous drop-in replacement Jars"
 description: "Things to consider when you're replacing Jar files without compiling"
-category: 
-tags: [compile, java, library]
+category: Java
+tags: [Compiler, Java, Jar]
 ---
 {% include JB/setup %}
 
