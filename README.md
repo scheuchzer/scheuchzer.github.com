@@ -1,4 +1,4 @@
-= Java Adventures 
+# Java Adventures 
 
 A blog about Java and other stuff.
 
