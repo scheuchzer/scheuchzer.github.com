@@ -17,7 +17,7 @@ tagline: Supporting tagline
     		<a href="{{ post.url }}">{{ post.title }}</a>
     	</h2>
     	{{ post.date | date: "%A %d %B %Y" }}
-    	<p>{{ post.content | strip_html | truncatewords: 55 }}</p> 
+    	<p>{{ post.content | strip_html | truncatewords: 35 }}</p> 
     	<p><a href="{{ post.url }}">Read more ...</a></p> 
     </p>
     <hr/>
