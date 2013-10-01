@@ -2,7 +2,7 @@
 layout: post
 title: "JEE: Connecting to the outside world with JCA connectors - Part 1"
 description: "Thoughts about configuration and how to make it simpler by using JCA connectors"
-category: 
+category: Java
 tags: [JEE, JCA, Connector, Resource Adapter]
 ---
 {% include JB/setup %}
