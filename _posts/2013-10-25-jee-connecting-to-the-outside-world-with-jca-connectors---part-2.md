@@ -373,10 +373,10 @@ We are done. What have we reached?
 * Connectivity configuration is separated from the application
   * Less application configuration, maybe even no application at all
   * Same WAR/EAR/RAR for all (testing) environment
-*   Configuration similar to datasources
-*   Usage similar to datasources
-*   Resource adapter and application can be release independently
-*   Faster builds
+* Configuration similar to datasources
+* Usage similar to datasources
+* Resource adapter and application can be release independently
+* Faster builds
 
 The application doesn't know with which echo implementation it's talking. The implementation can be replaced by the deployer or the 
 operator without touching the application or the application configuration at all! That's is just perfect for testing environments for example
