@@ -2,10 +2,11 @@
 layout: post
 title: "JEE: Connecting to the outside world with JCA connectors - Part 1"
 description: "Thoughts about configuration and how to make it simpler by using JCA connectors"
-category: Java
-tags: [JEE, JCA, Connector, Resource Adapter]
+category: JEE
+tags: [JEE, JCA, Connector, Resource Adapter, Configuration]
 ---
 {% include JB/setup %}
+
 
 In most JEE projects I came across so far there were issues with the configuration. The handling is somehow cumbersome and error-prone. Feeding changes to all configuration files for all testing environments is not my favorite work. 
 
@@ -92,7 +93,7 @@ When it comes to configuration I say that it makes configuration easier. Your ap
 ##Let's write a connector
 As this post is already quite long I will postpone the code to a later blog post.
 
-In part 2 I will introduce a base implementation I wrote that is based on the [connectorz project](http://connectorz.adam-bien.com/). It will provide base classes for creating connectors that only use url, user and password as configuration parameters. With only a little effort you'll be able to create additional connectors that connect to remote systems.
+In [Part 2]( ../../../10/25/jee-connecting-to-the-outside-world-with-jca-connectors---part-2) I will introduce a base implementation I wrote that is based on the [connectorz project](http://connectorz.adam-bien.com/). It will provide base classes for creating connectors that only use url, user and password as configuration parameters. With only a little effort you'll be able to create additional connectors that connect to remote systems.
 
 So long... and please have a close look at your configuration files
 
