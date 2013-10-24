@@ -8,8 +8,12 @@ tags: [JEE, JCA, Connector, Resource Adapter, Configuration]
 {% include JB/setup %}
 
 After philosophizing about application configuration in [Part 1]( ../../../10/01/jee-connecting-to-the-outside-world-with-resource-adapters) it's now time to get our hands dirty. 
-What are we going to write an outbound resource adapter! The resource adapter is based on my GitHub project [outbound-connector](https://github.com/scheuchzer/outbound-connector) 
-which provides some base classes that reduces the code for new simple resource adapters to almost nothing!
+What are we going to write an outbound resource adapter! The resource adapter is based on my GitHub project [outbound-connector](https://github.com/scheuchzer/outbound-connector.git) 
+which provides some base classes that reduces the code for new simple resource adapters to almost nothing! 
+
+As I still add new features to the outbound-connector project the code
+of this blog is based on a branch called [branch-1.0.x](https://github.com/scheuchzer/outbound-connector/tree/branch-1.0.x) and not the 
+[master branch](https://github.com/scheuchzer/outbound-connector/tree/master).
 
 # echo-connector - A simple stupid resource adapter
 
@@ -66,7 +70,7 @@ We create a new maven project called `echo-connector-api`. As the only dependenc
 </dependency>
 {% endhighlight %}
 
-# Interface: EchoConnection
+## Interface: EchoConnection
 
 We will provide one echo Method. We put it in a class called `EchoConnection`. The interface extends the `Connection` interface from the `remote-system-connector-api`. 
 
@@ -96,7 +100,7 @@ public class EchoResponse {
 }
 {% endhighlight %}
 
-# Interface: EchoConnectionFactory
+## Interface: EchoConnectionFactory
 
 The resource that we are going to inject into a web application or an EJB will be a connection factory. We define it in the interface 
 `EchoConnectionFactory` that extends `ConnectionFactory` located in `remote-system-connector-api`. You will notice that we only have to define the generic 
@@ -243,7 +247,7 @@ This class allocates connection from the connection pool. Luckily this has been 
 Therefore we don't have to implement any code besides a constructor.    
 
 
-# Class: InMemoryEchoConnection
+## Class: InMemoryEchoConnection
 
 Now things are starting to get interesting. This class is where you place the actual business code of the resource adapter. The base class `UrlBasedConnection` 
 provides access to our properties url, username and password. Nice, isn't it. They're just there waiting for you :-) You could use them to open a connection
@@ -340,7 +344,7 @@ try (EchoConnection connection = echo.getConnection()) {
 # The complete example
 
 The working sample code with echo connector and demo REST application can be found on [GitHub](https://github.com/scheuchzer/outbound-connector) in 
-the [examples](https://github.com/scheuchzer/outbound-connector/tree/master/examples/urlbased/echo) directory.
+the [examples](https://github.com/scheuchzer/outbound-connector/tree/branch-1.0.x/examples/urlbased/echo) directory.
 
 There is a (un)deploy script that works with Glassfish and JBoss/Wildfly. They will deploy resource adapter and demo application and configure
 two connections with different configuration parameters. The different connections can be accessed through the demo application by going to the urls
