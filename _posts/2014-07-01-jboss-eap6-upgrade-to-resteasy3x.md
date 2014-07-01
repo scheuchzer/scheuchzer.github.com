@@ -3,11 +3,11 @@ layout: post
 title: "JBoss EAP6: Upgrade to RESTEasy3.x"
 description: ""
 category: "JEE"
-tags: [Jee, JBoss, JBossEAP, JAX-RS 2.0, REST, RESTEasy]
+tags: [JEE, JEE6, JBoss, JBossEAP, JAX-RS 2.0, REST, RESTEasy2, RESTEasy3]
 ---
 {% include JB/setup %}
 
-When working with JBoss EAP 6.x you might reach the point, where the you would like to use the latest JAX-RS 2.0 features instead of the provided JAX-RS 1.1. In my case we hat to upgrade because of a bug in [RESTEasy 2](http://resteasy.jboss.org/) concerning sub-resource locators when using the proxy clients.
+When working with [JBoss EAP 6.x](https://www.redhat.com/products/jbossenterprisemiddleware/application-platform/) you might reach the point, where the you would like to use the latest JAX-RS 2.0 features instead of the provided JAX-RS 1.1. In my case we hat to upgrade because of a bug in [RESTEasy 2](http://resteasy.jboss.org/) concerning sub-resource locators when using the proxy clients.
 
 According to [the RESTEasy page](https://docs.jboss.org/resteasy/docs/3.0.2.Final/userguide/html_single/index.html#upgrading-eap61) you simply have
 to unzip a file that contains the new modules for JBoss. This is a wonderful solution when working locally but it's a very bad solution for 
