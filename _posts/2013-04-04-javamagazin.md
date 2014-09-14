@@ -16,7 +16,7 @@ extending JavaFx Applications with self-made hardware on a RaspberryPi.
 <img src="https://jaxenter.de/sites/default/files/styles/productdetail/public/cover_jm5_13_1.png?itok=xHoMUFyA">
 </a>
 
-[JavaMagazin 05.2013](http://it-republik.de/jaxenter/java-magazin-ausgaben/JavaFX-000544.html) (Page 59)
+[JavaMagazin 05.2013](href="https://jaxenter.de/Java-Magazin/Java-Magazin-513-109162) (Page 59)
 
 You can find the source code on my [GitHub Page](https://github.com/scheuchzer/raspi-fx-button)
 
