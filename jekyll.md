@@ -1,7 +1,7 @@
 # Local dev
 Start server:
 
-    jekyll --server
+    jekyll serve
 
     bundle exec jekyll serve --watch
 
