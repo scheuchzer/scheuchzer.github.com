@@ -13,7 +13,7 @@ Just played around with [Socket.io] to access a backend service over WebSockets.
 
 So, I wondered if there's a way to test the backend with the good old `curl` command. And yes! There is!
 
-{% highlight bash %}
+{% highlight bash linenos %}
 $ curl -i -N \ 
 	-H "Connection: Upgrade" \
 	-H "Upgrade: websocket" \
